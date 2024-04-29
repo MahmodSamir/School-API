@@ -1,11 +1,8 @@
-﻿using School.Data.Entities;
+﻿using Microsoft.EntityFrameworkCore;
+using School.Data.Entities;
 using School.Infrastructure.Repositories;
+using School.Infrastructure.UnitOfWork;
 using School.Service.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace School.Service.UnitOfWork
 {
@@ -17,9 +14,17 @@ namespace School.Service.UnitOfWork
         {
 			_studentRepository = studentRepository;
 		}
-        public async Task<List<Student>> GetAllyStudentsAsync()
+        public async Task<List<Student>> GetAllStudentsAsync()
 		{
 			return await _studentRepository.GetAllStudentsAsync();
+		}
+		public async Task<Student> GetStudentByIdAsync(int id)
+		{
+			var student = _studentRepository.GetTableNoTracking()
+				.Include(x => x.Department)
+				.Where(x => x.StudID.Equals(id))
+				.FirstOrDefault();
+			return student;
 		}
 	}
 }

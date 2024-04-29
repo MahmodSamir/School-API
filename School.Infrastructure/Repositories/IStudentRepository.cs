@@ -1,13 +1,9 @@
 ﻿using School.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using School.Infrastructure.Generics;
 
 namespace School.Infrastructure.Repositories
 {
-	public interface IStudentRepository
+	public interface IStudentRepository : IGenericRepositoryAsync<Student>
 	{
 		public Task<List<Student>> GetAllStudentsAsync();
 	}

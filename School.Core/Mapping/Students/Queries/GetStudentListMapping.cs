@@ -1,10 +1,5 @@
-﻿using School.Core.Features.Queries.Responses;
+﻿using School.Core.Features.Student.Responses;
 using School.Data.Entities;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace School.Core.Mapping.Students
 {
