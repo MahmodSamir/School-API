@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
 using MediatR;
-using School.Core.Features.Student.Queries.Models;
-using School.Core.Features.Student.Responses;
+using School.Core.Features.Students.Queries.Models;
+using School.Core.Features.Students.Responses;
 using School.Core.Response;
 using School.Service.Repositories;
 
-namespace School.Core.Features.Student.Queries.Handlers
+namespace School.Core.Features.Students.Queries.Handlers
 {
 	public class StudentHandler : ResponseHandler,
                                     IRequestHandler<GetStudentListQuery, ResponseRepository<List<GetStudentListResponse>>>,

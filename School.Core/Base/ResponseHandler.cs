@@ -37,6 +37,15 @@
 				Meta = Meta
 			};
 		}
+		public ResponseRepository<T> AlreadyExist<T>(string message = null)
+		{
+			return new ResponseRepository<T>()
+			{
+				StatusCode = System.Net.HttpStatusCode.UnprocessableEntity,
+				Succeeded = false,
+				Message = message == null ? "Already exist" : message
+			};
+		}
 		public ResponseRepository<T> NotFound<T>(string message = null)
 		{
 			return new ResponseRepository<T>()

@@ -8,6 +8,8 @@ namespace School.Core.Mapping.Students
 		{
 			GetStudentListMapping();
 			GetSingleStudentMapping();
+			AddStudentMapping();
+			EditStudentMapping();
 		}
 	}
 }

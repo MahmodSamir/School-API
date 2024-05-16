@@ -1,12 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace School.Core.Features.Student.Responses
+namespace School.Core.Features.Students.Responses
 {
-    public class GetSingleStudentResponse
+    public class GetStudentListResponse
     {
         public int StudID { get; set; }
         public string Name { get; set; }

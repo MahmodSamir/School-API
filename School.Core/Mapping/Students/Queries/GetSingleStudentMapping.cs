@@ -1,4 +1,4 @@
-﻿using School.Core.Features.Student.Responses;
+﻿using School.Core.Features.Students.Responses;
 using School.Data.Entities;
 
 namespace School.Core.Mapping.Students

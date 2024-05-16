@@ -13,7 +13,10 @@ namespace School.Data.MetaData
         {
             public const string prefix = root+ "/Student";
             public const string List = prefix+ "/List";
-            public const string GetByID = List+ "/{id}";
+            public const string GetByID = prefix+ "/{id}";
+            public const string Create = prefix+ "/Create";
+            public const string Edit = prefix+ "/Edit";
+            public const string Delete = prefix+ "/{id}";
 		}
     }
 }

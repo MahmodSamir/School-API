@@ -26,5 +26,34 @@ namespace School.Service.UnitOfWork
 				.FirstOrDefault();
 			return student;
 		}
+		
+		public async Task<Student> GetStudentByIdWithoutDepartmentAsync(int id)
+		{
+			var student = _studentRepository.GetTableNoTracking()
+				.Where(x => x.StudID.Equals(id))
+				.FirstOrDefault();
+			return student;
+		}
+		public async Task<string> AddStudent(Student student)
+		{
+			var exist = _studentRepository.GetTableNoTracking().Where(x=> x.Name == student.Name).FirstOrDefault();
+			if (exist != null)
+				return "Exist";
+			await _studentRepository.AddAsync(student);
+			return "Success";
+		}
+		public async Task<string> EditStudent(Student student)
+		{
+			var exist = _studentRepository.GetTableNoTracking().Where(x => x.Name == student.Name & !x.StudID.Equals(student.StudID)).FirstOrDefault();
+			if (exist != null)
+				return "Exist";
+			await _studentRepository.UpdateAsync(student);
+			return "Success";
+		}
+		public async Task<string> DeleteStudent(Student student)
+		{
+			await _studentRepository.DeleteAsync(student);
+			return "Success";
+		}
 	}
 }
