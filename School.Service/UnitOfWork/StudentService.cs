@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using School.Data.Entities;
+using School.Data.MetaData;
 using School.Infrastructure.Repositories;
 using School.Infrastructure.UnitOfWork;
 using School.Service.Repositories;
@@ -54,6 +55,34 @@ namespace School.Service.UnitOfWork
 		{
 			await _studentRepository.DeleteAsync(student);
 			return "Success";
+		}
+
+		public IQueryable<Student> GetStudentsPaginated()
+		{
+			return _studentRepository.GetTableNoTracking().Include(x => x.Department).AsQueryable();
+		}
+
+		public IQueryable<Student> GetStudentsSearchedOrderedPaginated(string search, StudentOrderEnum orderBy)
+		{
+			var query =  _studentRepository.GetTableNoTracking().Include(x => x.Department).AsQueryable();
+			if(search != null)
+				query = query.Where(predicate: x => x.Name.Contains(search) || x.Department.DName.Contains(search));
+			switch(orderBy)
+			{
+				case StudentOrderEnum.StudID:
+					query = query.OrderBy(x=>x.StudID); 
+					break;
+				case StudentOrderEnum.Name:
+					query = query.OrderBy(x => x.Name);
+					break;
+				case StudentOrderEnum.DepartmentName:
+					query = query.OrderBy(x => x.Department.DName);
+					break;
+				default: 
+					query = query.OrderBy(x => x.StudID);
+					break;
+			}
+			return query;
 		}
 	}
 }

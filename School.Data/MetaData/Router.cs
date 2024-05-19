@@ -17,6 +17,7 @@ namespace School.Data.MetaData
             public const string Create = prefix+ "/Create";
             public const string Edit = prefix+ "/Edit";
             public const string Delete = prefix+ "/{id}";
+            public const string PaginatedList = prefix+ "/PaginatedList";
 		}
     }
 }

@@ -1,7 +1,9 @@
 ﻿using AutoMapper;
 using MediatR;
+using Microsoft.Extensions.Localization;
 using School.Core.Features.Students.Commands.Models;
 using School.Core.Response;
+using School.Core.SharedResource;
 using School.Data.Entities;
 using School.Service.Repositories;
 using System;
@@ -18,11 +20,13 @@ namespace School.Core.Features.Students.Commands.Handlers
 	{
 		private readonly IStudentService _studentService;
 		private readonly IMapper _mapper;
+		private readonly IStringLocalizer<Localization> _stringLocalizer;
 
-		public StudentCommandHandler(IStudentService studentService, IMapper mapper)
+		public StudentCommandHandler(IStudentService studentService, IMapper mapper, IStringLocalizer<Localization> stringLocalizer)
 		{
 			_studentService = studentService;
 			_mapper = mapper;
+			_stringLocalizer = stringLocalizer;
 		}
 		public async Task<ResponseRepository<string>> Handle(AddStudentCommand request, CancellationToken cancellationToken)
 		{

@@ -7,7 +7,7 @@ using School.API.Base;
 using Microsoft.AspNetCore.Components.Forms;
 namespace School.API.Controllers
 {
-	[ApiController]
+	//[ApiController]
 	public class StudentsController : CustomBaseController
 	{
 		private readonly IMediator _mediator;
@@ -47,5 +47,12 @@ namespace School.API.Controllers
 			var res = await _mediator.Send(new DeleteStudentCommand(id));
 			return CustomResult(res);
 		}
+		[HttpGet(Router.StudentRouter.PaginatedList)]
+		public async Task<IActionResult> GetStudentsPaginatedList([FromQuery] GetStudentsPaginatedList query)
+		{
+			var res = await _mediator.Send(query);
+			return Ok(res);
+		}
+
 	}
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "hX1+UFFVaQYnma57bUztQ/EHGdbU48ZgXRvvUawu/Luvsjfj4MI5iLcRvH2d/ziYK+yNUjppdCZZoLP9Akcyrw==",
+  "dgSpecHash": "zewBDMbylS19Xc7RAvaX1N39BT3Vg2Q96n4yY0kGAc0WLOdg+qmuw+jZ8i9eMEvEd4MexAaNC6LNrOfWhcafRQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\dotnet\\School\\School.Core\\School.Core.csproj",
   "expectedPackageFiles": [
@@ -23,6 +23,7 @@
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.5\\microsoft.extensions.localization.abstractions.8.0.5.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
