@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace School.Core.SharedResource
 {
-	public class Localization
+	public class LocalizationResource
 	{
 	}
 }

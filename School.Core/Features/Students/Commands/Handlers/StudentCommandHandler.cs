@@ -20,22 +20,22 @@ namespace School.Core.Features.Students.Commands.Handlers
 	{
 		private readonly IStudentService _studentService;
 		private readonly IMapper _mapper;
-		private readonly IStringLocalizer<Localization> _stringLocalizer;
+		private readonly IStringLocalizer<LocalizationResource> _localizer;
 
-		public StudentCommandHandler(IStudentService studentService, IMapper mapper, IStringLocalizer<Localization> stringLocalizer)
+		public StudentCommandHandler(IStudentService studentService, IMapper mapper, IStringLocalizer<LocalizationResource> localizer) : base(localizer)
 		{
 			_studentService = studentService;
 			_mapper = mapper;
-			_stringLocalizer = stringLocalizer;
+			_localizer = localizer;
 		}
 		public async Task<ResponseRepository<string>> Handle(AddStudentCommand request, CancellationToken cancellationToken)
 		{
 			var studentMapper = _mapper.Map<Student>(request);
 			var student = await _studentService.AddStudent(studentMapper);
 			if (student == "Exist")
-				return AlreadyExist<string>("Name already used");
+				return AlreadyExist<string>();
 			else if (student == "Success")
-				return Created("Added Successfully");
+				return Created("");
 			return BadRequest<string>();
 		}
 
@@ -47,7 +47,7 @@ namespace School.Core.Features.Students.Commands.Handlers
 			var studentMapper = _mapper.Map<Student>(request);
 			var res = await _studentService.EditStudent(studentMapper);
 			if (res == "Success")
-				return Success("Edited");
+				return Success("");
 			else if (res == "Exist")
 				return AlreadyExist<string>();
 			return BadRequest<string>();
@@ -60,7 +60,7 @@ namespace School.Core.Features.Students.Commands.Handlers
 				return NotFound<string>();
 			var res = await _studentService.DeleteStudent(student);
 			if (res == "Success")
-				return Success("Deleted");
+				return Deleted<string>();
 			return BadRequest<string>();
 		}
 	}

@@ -1,10 +1,15 @@
-﻿namespace School.Core.Response
+﻿using Microsoft.Extensions.Localization;
+using School.Core.SharedResource;
+
+namespace School.Core.Response
 {
 	public class ResponseHandler
 	{
-		public ResponseHandler()
-		{
+		private readonly IStringLocalizer _localizer;
 
+		public ResponseHandler(IStringLocalizer localizer)
+		{
+			_localizer = localizer;
 		}
 		public ResponseRepository<T> Success<T>(T entity, object Meta = null)
 		{
@@ -13,7 +18,7 @@
 				Data = entity,
 				StatusCode = System.Net.HttpStatusCode.OK,
 				Succeeded = true,
-				Message = "Done Successfully",
+				Message = _localizer[LocalizationKeys.Success],
 				Meta = Meta
 			};
 		}
@@ -23,7 +28,7 @@
 			{
 				StatusCode = System.Net.HttpStatusCode.OK,
 				Succeeded = true,
-				Message = "Deleted Successfully"
+				Message = _localizer[LocalizationKeys.Deleted]
 			};
 		}
 		public ResponseRepository<T> Created<T>(T entity, object Meta = null)
@@ -33,26 +38,26 @@
 				Data = entity,
 				StatusCode = System.Net.HttpStatusCode.Created,
 				Succeeded = true,
-				Message = "Created Successfully",
+				Message = _localizer[LocalizationKeys.Created],
 				Meta = Meta
 			};
 		}
-		public ResponseRepository<T> AlreadyExist<T>(string message = null)
+		public ResponseRepository<T> AlreadyExist<T>()
 		{
 			return new ResponseRepository<T>()
 			{
 				StatusCode = System.Net.HttpStatusCode.UnprocessableEntity,
 				Succeeded = false,
-				Message = message == null ? "Already exist" : message
+				Message = _localizer[LocalizationKeys.Exist]
 			};
 		}
-		public ResponseRepository<T> NotFound<T>(string message = null)
+		public ResponseRepository<T> NotFound<T>()
 		{
 			return new ResponseRepository<T>()
 			{
 				StatusCode = System.Net.HttpStatusCode.NotFound,
 				Succeeded = false,
-				Message = message == null ? "Not Found" : message
+				Message = _localizer[LocalizationKeys.NotFound]
 			};
 		}
 		public ResponseRepository<T> Unauthorized<T>()
@@ -70,7 +75,7 @@
 			{
 				StatusCode = System.Net.HttpStatusCode.BadRequest,
 				Succeeded = false,
-				Message = Message == null ? "Bad Request" : Message
+				Message = _localizer[LocalizationKeys.BadRequest]
 			};
 		}
 	}

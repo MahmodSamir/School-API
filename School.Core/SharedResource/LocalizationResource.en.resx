@@ -117,10 +117,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BadRequest" xml:space="preserve">
+    <value>bad request</value>
+  </data>
+  <data name="Created" xml:space="preserve">
+    <value>created successfully</value>
+  </data>
+  <data name="Deleted" xml:space="preserve">
+    <value>deleted successfully</value>
+  </data>
+  <data name="Exist" xml:space="preserve">
+    <value>already exist</value>
+  </data>
   <data name="NotFound" xml:space="preserve">
     <value>obejct not found</value>
   </data>
   <data name="Required" xml:space="preserve">
     <value>required field</value>
+  </data>
+  <data name="Success" xml:space="preserve">
+    <value>successed</value>
   </data>
 </root>

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "zewBDMbylS19Xc7RAvaX1N39BT3Vg2Q96n4yY0kGAc0WLOdg+qmuw+jZ8i9eMEvEd4MexAaNC6LNrOfWhcafRQ==",
+  "dgSpecHash": "Ocby4R9FvnYY4T9Y0YtlJxqxjH2gIrjH1JT5riACg8szFrsENnqB2a8NYRryHA2lxd5iZaAmETeiNuu/djlEfQ==",
   "success": true,
   "projectFilePath": "D:\\Projects\\dotnet\\School\\School.Core\\School.Core.csproj",
   "expectedPackageFiles": [
@@ -22,11 +22,12 @@
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.1\\microsoft.extensions.dependencyinjection.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.localization\\8.0.5\\microsoft.extensions.localization.8.0.5.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.localization.abstractions\\8.0.5\\microsoft.extensions.localization.abstractions.8.0.5.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
-    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.1\\microsoft.extensions.logging.abstractions.8.0.1.nupkg.sha512",
+    "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.options\\8.0.2\\microsoft.extensions.options.8.0.2.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.identity.client\\4.56.0\\microsoft.identity.client.4.56.0.nupkg.sha512",
     "C:\\Users\\mahmo\\.nuget\\packages\\microsoft.identity.client.extensions.msal\\4.56.0\\microsoft.identity.client.extensions.msal.4.56.0.nupkg.sha512",
