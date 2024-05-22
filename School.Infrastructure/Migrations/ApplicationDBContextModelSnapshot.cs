@@ -37,7 +37,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasKey("DID");
 
-                    b.ToTable("Department");
+                    b.ToTable("Department", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.DepartmentSubject", b =>
@@ -60,7 +60,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("SubID");
 
-                    b.ToTable("DepartmentSubject");
+                    b.ToTable("DepartmentSubject", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Student", b =>
@@ -93,7 +93,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("DID");
 
-                    b.ToTable("Student");
+                    b.ToTable("Student", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.StudentSubject", b =>
@@ -116,7 +116,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasIndex("SubID");
 
-                    b.ToTable("StudentSubject");
+                    b.ToTable("StudentSubject", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.Subject", b =>
@@ -127,8 +127,8 @@ namespace School.Infrastructure.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("SubID"));
 
-                    b.Property<DateTime>("Period")
-                        .HasColumnType("datetime2");
+                    b.Property<int>("Period")
+                        .HasColumnType("int");
 
                     b.Property<string>("SubjectName")
                         .IsRequired()
@@ -137,7 +137,7 @@ namespace School.Infrastructure.Migrations
 
                     b.HasKey("SubID");
 
-                    b.ToTable("Subject");
+                    b.ToTable("Subject", (string)null);
                 });
 
             modelBuilder.Entity("School.Data.Entities.DepartmentSubject", b =>

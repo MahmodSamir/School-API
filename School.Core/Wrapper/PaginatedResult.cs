@@ -3,6 +3,7 @@
 	public class PaginatedResult<T>
 	{
 		public List<T> Data { get; set; }
+		public object Meta { get; set; }
 		public int CurrentPage { get; set; }
 		public int TotalPages { get; set; }
 		public int TotalCount { get; set; }
@@ -28,7 +29,7 @@
 
 		public static PaginatedResult<T> Success(List<T> data, int count, int page, int pageSize)
 		{
-			return new(true, data, null, count, page, pageSize);
+			return new(true, data, null ,count, page, pageSize);
 		}
 	}
 }

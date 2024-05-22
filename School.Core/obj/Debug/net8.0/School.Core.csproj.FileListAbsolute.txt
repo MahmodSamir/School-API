@@ -10,6 +10,8 @@ D:\Projects\dotnet\School\School.Core\bin\Debug\net8.0\School.Data.pdb
 D:\Projects\dotnet\School\School.Core\bin\Debug\net8.0\School.Infrastructure.pdb
 D:\Projects\dotnet\School\School.Core\bin\Debug\net8.0\School.Service.pdb
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.csproj.AssemblyReference.cache
+D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.SharedResource.LocalizationResource.ar.resources
+D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.SharedResource.LocalizationResource.en.resources
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.csproj.GenerateResource.cache
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.GeneratedMSBuildEditorConfig.editorconfig
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.AssemblyInfoInputs.cache
@@ -23,5 +25,3 @@ D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.dll
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\refint\School.Core.dll
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.pdb
 D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\ref\School.Core.dll
-D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.SharedResource.LocalizationResource.ar.resources
-D:\Projects\dotnet\School\School.Core\obj\Debug\net8.0\School.Core.SharedResource.LocalizationResource.en.resources

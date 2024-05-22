@@ -22,8 +22,12 @@ D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.EntityFrameworkC
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyModel.dll
+D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Localization.Abstractions.dll
+D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Identity.Client.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Identity.Client.Extensions.Msal.dll
 D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
@@ -149,7 +153,3 @@ D:\Projects\dotnet\School\School.API\obj\Debug\net8.0\refint\School.API.dll
 D:\Projects\dotnet\School\School.API\obj\Debug\net8.0\School.API.pdb
 D:\Projects\dotnet\School\School.API\obj\Debug\net8.0\School.API.genruntimeconfig.cache
 D:\Projects\dotnet\School\School.API\obj\Debug\net8.0\ref\School.API.dll
-D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Localization.dll
-D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
-D:\Projects\dotnet\School\School.API\bin\Debug\net8.0\Microsoft.Extensions.Options.dll

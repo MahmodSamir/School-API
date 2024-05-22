@@ -13,7 +13,6 @@ namespace School.Data.Entities
 		public int SubID { get; set; }
 		[StringLength(50)]
 		public string SubjectName { get; set; }
-		public DateTime Period { get; set; }
 		public ICollection<StudentSubject> StudentsSubjects { get; set; }
 		public ICollection<DepartmentSubject> DepartmentsSubjects { get; set; }
 	}

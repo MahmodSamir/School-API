@@ -11,7 +11,7 @@ namespace School.Core.Response
 		{
 			_localizer = localizer;
 		}
-		public ResponseRepository<T> Success<T>(T entity, object Meta = null)
+		public ResponseRepository<T> Success<T>(T entity)
 		{
 			return new ResponseRepository<T>()
 			{
@@ -19,7 +19,6 @@ namespace School.Core.Response
 				StatusCode = System.Net.HttpStatusCode.OK,
 				Succeeded = true,
 				Message = _localizer[LocalizationKeys.Success],
-				Meta = Meta
 			};
 		}
 		public ResponseRepository<T> Deleted<T>()
@@ -31,7 +30,7 @@ namespace School.Core.Response
 				Message = _localizer[LocalizationKeys.Deleted]
 			};
 		}
-		public ResponseRepository<T> Created<T>(T entity, object Meta = null)
+		public ResponseRepository<T> Created<T>(T entity)
 		{
 			return new ResponseRepository<T>()
 			{
@@ -39,7 +38,6 @@ namespace School.Core.Response
 				StatusCode = System.Net.HttpStatusCode.Created,
 				Succeeded = true,
 				Message = _localizer[LocalizationKeys.Created],
-				Meta = Meta
 			};
 		}
 		public ResponseRepository<T> AlreadyExist<T>()
@@ -69,7 +67,7 @@ namespace School.Core.Response
 				Message = "UnAuthorized"
 			};
 		}
-		public ResponseRepository<T> BadRequest<T>(string Message = null)
+		public ResponseRepository<T> BadRequest<T>()
 		{
 			return new ResponseRepository<T>()
 			{

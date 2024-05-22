@@ -19,5 +19,17 @@ namespace School.Data.MetaData
             public const string Delete = prefix+ "/{id}";
             public const string PaginatedList = prefix+ "/PaginatedList";
 		}
-    }
+        public class DepartmentRouter()
+        {
+			public const string prefix = root + "/Department";
+			public const string GetByID = prefix + "/{id}";
+		}
+
+		public class SubjectRouter()
+		{
+			public const string prefix = root + "/Subject";
+			public const string List = prefix + "/List";
+		}
+
+	}
 }
