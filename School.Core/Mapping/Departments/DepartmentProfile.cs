@@ -12,6 +12,9 @@ namespace School.Core.Mapping.Departments
 		public DepartmentProfile()
 		{
 			GetDepartmentByIdMapping();
+			GetDepartmentListMapping();
+			AddDepartmentMapping();
+			EditDepartmentMapping();
 		}
 	}
 }

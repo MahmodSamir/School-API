@@ -10,5 +10,8 @@ namespace School.Service.Repositories
 	public interface IDepartmentService
 	{
 		public Task<Department> getDepartmentById(int id); 
+		public Task<List<Department>> getDepartmentList(); 
+		public Task<string> addDepartment(Department department); 
+		public Task<string> editDepartment(Department department); 
 	}
 }

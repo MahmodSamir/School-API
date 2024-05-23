@@ -23,12 +23,18 @@ namespace School.Data.MetaData
         {
 			public const string prefix = root + "/Department";
 			public const string GetByID = prefix + "/{id}";
+			public const string List = prefix + "/List";
+			public const string Create = prefix + "/Create";
+			public const string Edit = prefix + "/Edit";
 		}
 
 		public class SubjectRouter()
 		{
 			public const string prefix = root + "/Subject";
 			public const string List = prefix + "/List";
+			public const string GetByID = prefix + "/{id}";
+			public const string Edit = prefix + "/Edit";
+			public const string Create = prefix + "/Create";
 		}
 
 	}

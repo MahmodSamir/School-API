@@ -7,6 +7,9 @@ namespace School.Core.Mapping.Subjects
 		public SubjectProfile() 
 		{
 			GetSubjectListMapping();
+			GetSubjectByIdMapping();
+			EditSubjectMapping();
+			AddSubjectMapping();
 		}
 	}
 }

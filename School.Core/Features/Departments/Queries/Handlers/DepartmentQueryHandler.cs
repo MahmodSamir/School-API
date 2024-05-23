@@ -15,6 +15,7 @@ using System.Threading.Tasks;
 namespace School.Core.Features.Departments.Queries.Handlers
 {
     internal class DepartmentQueryHandler : ResponseHandler, IRequestHandler<GetDepartmentByIdQuery, ResponseRepository<GetDepartmentByIdQueryResponse>>
+														   , IRequestHandler<GetDepartmentListQuery, ResponseRepository<List<GetDepartmentListQueryResponse>>>
 	{
 		private readonly IStringLocalizer<LocalizationResource> _localizer;
 		private readonly IDepartmentService _departmentService;
@@ -33,6 +34,15 @@ namespace School.Core.Features.Departments.Queries.Handlers
 				return NotFound<GetDepartmentByIdQueryResponse>();
 			var departMapper = _mapper.Map<GetDepartmentByIdQueryResponse>(depart);
 			return Success(departMapper);
+		}
+
+		public async Task<ResponseRepository<List<GetDepartmentListQueryResponse>>> Handle(GetDepartmentListQuery request, CancellationToken cancellationToken)
+		{
+			var departs = await _departmentService.getDepartmentList();
+			if(departs == null)
+				return NotFound<List<GetDepartmentListQueryResponse>>();
+			var departsMapper = _mapper.Map<List<GetDepartmentListQueryResponse>>(departs);
+			return Success(departsMapper);
 		}
 	}
 }
